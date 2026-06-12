@@ -6,7 +6,6 @@
     { "url": "https://docker.1panel.live", "note": "1Panel" },
     { "url": "https://docker.m.daocloud.io", "note": "DaoCloud" },
     { "url": "https://dockerproxy.net", "note": "DockerProxy" },
-    { "url": "https://docker.xuanyuan.me", "note": "轩辕镜像" },
     { "url": "https://registry.cyou", "note": "registry.cyou" }
   ]
 }
