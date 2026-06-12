@@ -1,0 +1,32 @@
+name: Sync mirror candidates
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # weekly, Monday 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync candidates from dongyubin/DockerHub and probe liveness
+        run: python3 scripts/sync_candidates.py
+      - name: Open PR for human review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: sync mirror candidates"
+          title: "chore: sync mirror candidates"
+          body: |
+            Automated sync from dongyubin/DockerHub README + /v2/ liveness probe.
+            **Review before merge** — a mirror is a man-in-the-middle position;
+            only merge hosts you trust.
+          branch: auto/sync-candidates
+          delete-branch: true
