@@ -1,11 +1,54 @@
 {
   "version": 1,
-  "updated_at": "2026-06-12T00:00:00Z",
+  "updated_at": "2026-09-07T06:56:17Z",
   "mirrors": [
-    { "url": "https://docker.1ms.run", "note": "毫秒镜像" },
-    { "url": "https://docker.1panel.live", "note": "1Panel" },
-    { "url": "https://docker.m.daocloud.io", "note": "DaoCloud" },
-    { "url": "https://dockerproxy.net", "note": "DockerProxy" },
-    { "url": "https://registry.cyou", "note": "registry.cyou" }
+    {
+      "url": "https://docker.1ms.run",
+      "note": "毫秒镜像"
+    },
+    {
+      "url": "https://docker.m.daocloud.io",
+      "note": "DaoCloud"
+    },
+    {
+      "url": "https://dockerproxy.net",
+      "note": "DockerProxy"
+    },
+    {
+      "url": "https://mirror.houlang.cloud",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://cr.console.aliyun.com",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://dislabaiot.xyz",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://dockerhub.icu",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://docker.awsl9527.cn",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://hub.uuuadc.top",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://docker.aityp.com",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://gist.github.com",
+      "note": "from dongyubin/DockerHub"
+    },
+    {
+      "url": "https://image.jianmuhub.com",
+      "note": "from dongyubin/DockerHub"
+    }
   ]
 }
